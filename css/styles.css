@@ -1,0 +1,316 @@
+:root {
+    --main-color: #303030;
+    --secondary-color: #555555;
+    --accent-color: #FF6C00;
+    --white: #fff;
+    --dark-mode-main-color: #9DA4BD;
+    --main-font-family: 'Open Sans', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+    font-family: var(--main-font-family);
+    color: var(--main-color);
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.menu {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+}
+
+.suptitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: var(--secondary-font-family);
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.subtitle,
+.price-description {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* ============================ HEADER ====================== */
+.menu-nav {}
+
+.menu-list {}
+
+.menu-link {
+    color: var(--white);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-email:hover,
+.menu-email:focus {
+    color: var(--accent-color);
+}
+
+.menu-item {}
+
+.menu-email {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+
+.button-cpa {
+    cursor: pointer;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.button-cpa:hover,
+.button-cpa:focus {
+    background-color: var(--accent-color);
+}
+
+/* ============================ HERO ====================== */
+
+.hero {}
+
+.social-media-list {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+}
+
+.social-media-item {}
+
+.social-media-link {
+    color: var(--main-color);
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+    color: var(--accent-color);
+}
+
+.hero-suptitle {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+    font-family: var(--secondary-font-family);
+    font-size: 72px;
+    line-height: 85px;
+    color: var(--white);
+    letter-spacing: 0.05em;
+}
+
+.hero-subtitle {
+    color: var(--dark-mode-main-color);
+}
+
+
+/* ============================ ABOUT ====================== */
+
+.about {}
+
+.about-list {}
+
+.about-item {}
+
+.about-suptitle {}
+
+.about-title {}
+
+.about-description {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+}
+
+.about-subtitle {}
+
+
+/* ============================ PRICE ====================== */
+
+.price {}
+
+.price-suptitle {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.price-title {
+    color: var(--white);
+}
+
+.price-1-column {}
+
+.price-1-column {}
+
+.price-list {}
+
+.price-item {}
+
+.price-description {
+    color: var(--white);
+}
+
+.price-service {}
+
+.price-money {}
+
+/* ============================ WHY US ====================== */
+.why-us {}
+
+.why-us-list {}
+
+.why-us-item {}
+
+.why-us-number {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.why-us-description {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+}
+
+.why-us-suptitle {}
+
+.why-us-title {}
+
+
+.why-us-subtitle {
+    color: var(--secondary-color);
+}
+
+
+/* ============================ BARBERS ====================== */
+
+.barbers {}
+
+.barbers-suptitle {}
+
+.barbers-title {}
+
+.barbers-list {}
+
+.barbers-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.barbers-description {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+
+
+/* ============================ GALLERY ====================== */
+
+.gallery {}
+
+.gallery-suptitle {}
+
+.gallery-list {}
+
+/* ============================ ONLINE-FORM ====================== */
+.booking-title {
+    color: var(--white);
+}
+
+/* ============================ CONTACTS ====================== */
+
+.contacts-title {
+    color: var(--white);
+}
+
+.contacts-address {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+}
+
+.contacts-list {}
+
+.contacts-item {}
+
+.contacts-link {
+    color: var(--dark-mode-main-color);
+}
+
+.contacts-hours {
+    color: var(--white);
+}
+
+.contacts-hours-subtitle {
+    color: var(--dark-mode-main-color);
+}
+
+/* ============================ FOOTER ====================== */
+
+.footer {}
+
+.footer-copyright {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--dark-mode-main-color);
+}
