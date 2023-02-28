@@ -6,6 +6,7 @@
 	--dark-mode-main-color: #9da4bd;
 	--main-font-family: "Open Sans", sans-serif;
 	--secondary-font-family: "Raleway", sans-serif;
+	--basic-margine: 20px;
 }
 
 body {
@@ -39,6 +40,7 @@ img {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
+	border: 1px solid tomato;
 }
 
 .section {
@@ -48,11 +50,9 @@ img {
 
 /* ================================== Classes ========================== */
 
-.container {
-}
+.container {}
 
-.section {
-}
+.section {}
 
 .link {
 	text-decoration: none;
@@ -106,21 +106,23 @@ img {
 /* ============================ HEADER ====================== */
 .menu-nav {
 	display: flex;
+	align-items: center;
 }
 
 .header-content {
 	display: flex;
 	background-color: lightgreen;
-	/* align-items: center; */
+	padding: 32px 0;
+	align-items: center;
 }
 
 .header-logo {
-	padding-top: 32px;
 	margin-right: 131px;
 }
 
 .menu-list {
 	display: flex;
+	gap: 30px;
 }
 
 .menu-link {
@@ -135,12 +137,12 @@ img {
 }
 
 .menu-item {
-	padding-top: 52px;
+	/* padding-top: 52px; */
 }
 
-.menu-item:not(:last-child) {
+/* .menu-item:not(:last-child) {
 	margin-right: 30px;
-}
+} */
 
 .menu-email {
 	font-weight: 600;
@@ -149,10 +151,18 @@ img {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: var(--white);
+	margin-left: auto;
+	margin-right: 43px;
 }
 
 .button-cpa {
 	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+	padding: 12px 20px;
+	min-width: 160px;
+
 }
 
 .button {
@@ -172,6 +182,7 @@ img {
 /* ============================ HERO ====================== */
 
 .hero {
+	background-color: tomato;
 }
 
 .social-media-list {
@@ -181,8 +192,7 @@ img {
 	letter-spacing: 0.2em;
 }
 
-.social-media-item {
-}
+.social-media-item {}
 
 .social-media-link {
 	color: var(--main-color);
@@ -195,6 +205,7 @@ img {
 
 .hero-suptitle {
 	color: rgba(157, 164, 189, 0.6);
+	margin-bottom: var(--basic-margine);
 }
 
 .hero-title {
@@ -203,27 +214,28 @@ img {
 	line-height: 85px;
 	color: var(--white);
 	letter-spacing: 0.05em;
+	margin-bottom: var(--basic-margine);
 }
 
 .hero-subtitle {
 	color: var(--dark-mode-main-color);
+	max-width: 360px;
 }
 
 /* ============================ ABOUT ====================== */
 
-.about {
-}
+.about {}
 
-.about-list {
-}
+.about-list {}
 
-.about-item {
-}
+.about-item {}
 
 .about-suptitle {
+	margin-bottom: var(--basic-margine);
 }
 
 .about-title {
+	margin-bottom: var(--basic-margine);
 }
 
 .about-description {
@@ -231,55 +243,60 @@ img {
 	line-height: 1.86;
 	letter-spacing: 0.02em;
 	color: var(--secondary-color);
+	margin-bottom: 42px;
 }
 
 .about-subtitle {
+	display: block;
+	margin-bottom: var(--basic-margine);
 }
 
 /* ============================ PRICE ====================== */
 
 .price {
+	padding: 120px 0;
 }
 
 .price-suptitle {
 	color: rgba(157, 164, 189, 0.6);
+	margin-bottom: var(--basic-margine);
 }
 
 .price-title {
 	color: var(--white);
+	margin-bottom: 44px;
 }
 
-.price-1-column {
-}
+.price-1-column {}
 
-.price-1-column {
-}
+.price-1-column {}
 
 .price-list {
+	padding: 30px 20px;
+	border: 1px solid green;
+	background-color: #555555;
 }
 
-.price-item {
+.price-item {}
+
+.price-item:not(:last-child) {
+	margin-bottom: var(--basic-margine);
 }
 
 .price-description {
 	color: var(--white);
 }
 
-.price-service {
-}
+.price-service {}
 
-.price-money {
-}
+.price-money {}
 
 /* ============================ WHY US ====================== */
-.why-us {
-}
+.why-us {}
 
-.why-us-list {
-}
+.why-us-list {}
 
-.why-us-item {
-}
+.why-us-item {}
 
 .why-us-number {
 	font-weight: 700;
@@ -296,11 +313,9 @@ img {
 	text-align: center;
 }
 
-.why-us-suptitle {
-}
+.why-us-suptitle {}
 
-.why-us-title {
-}
+.why-us-title {}
 
 .why-us-subtitle {
 	color: var(--secondary-color);
@@ -308,17 +323,13 @@ img {
 
 /* ============================ BARBERS ====================== */
 
-.barbers {
-}
+.barbers {}
 
-.barbers-suptitle {
-}
+.barbers-suptitle {}
 
-.barbers-title {
-}
+.barbers-title {}
 
-.barbers-list {
-}
+.barbers-list {}
 
 .barbers-item {
 	font-weight: 400;
@@ -338,14 +349,11 @@ img {
 
 /* ============================ GALLERY ====================== */
 
-.gallery {
-}
+.gallery {}
 
-.gallery-suptitle {
-}
+.gallery-suptitle {}
 
-.gallery-list {
-}
+.gallery-list {}
 
 /* ============================ ONLINE-FORM ====================== */
 .booking-title {
@@ -366,11 +374,9 @@ img {
 	letter-spacing: 0.02em;
 }
 
-.contacts-list {
-}
+.contacts-list {}
 
-.contacts-item {
-}
+.contacts-item {}
 
 .contacts-link {
 	color: var(--dark-mode-main-color);
@@ -386,8 +392,7 @@ img {
 
 /* ============================ FOOTER ====================== */
 
-.footer {
-}
+.footer {}
 
 .footer-copyright {
 	font-weight: 600;
