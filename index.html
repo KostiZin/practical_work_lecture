@@ -23,7 +23,7 @@
 
 	<body>
 		<!-- Header -->
-		<header>
+		<header class="header">
 			<div class="container header-content">
 				<nav class="menu-nav menu">
 					<a href="./index.html" class="header-logo">
@@ -44,7 +44,7 @@
 		<main>
 			<!-- section 1 - Hero -->
 			<section class="hero">
-				<div class="container">
+				<div class="container hero-container">
 					<ul class="social-media-list list">
 						<li class="social-media-item">
 							<a class="social-media-link link" href="#" target="_blank" rel="noopener nofollow noreferrer"
@@ -55,17 +55,19 @@
 							<a class="social-media-link link" href="#" target="_blank" rel="noopener nofollow noreferrer">Youtube</a>
 						</li>
 					</ul>
-					<p class="hero-suptitle suptitle">A hair salon for men in Kyiv</p>
-					<h1 class="hero-title">BarberShop</h1>
-					<p class="hero-subtitle subtitle"
-						>We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p
-					>
+					<div class="hero-content">
+						<p class="hero-suptitle suptitle">A hair salon for men in Kyiv</p>
+						<h1 class="hero-title">BarberShop</h1>
+						<p class="hero-subtitle subtitle"
+							>We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p
+						>
+					</div>
 				</div>
 			</section>
 
 			<!-- section 2 - Best Barbershop in your city -->
 			<section class="about section">
-				<div class="container">
+				<div class="container about-container">
 					<ul class="about-list list">
 						<li class="about-item"
 							><img
@@ -83,17 +85,19 @@
 							/>
 						</li>
 					</ul>
-					<p class="about-suptitle suptitle">About</p>
-					<h2 class="about-title title">Best Barbershop in your city</h2>
-					<p class="about-description">
-						<span class="about-subtitle subtitle"
-							>If you want to add more confidence to your image, you should definitely visit us.</span
-						>
-						We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into
-						the hands of our master, you will never be the same again. We are a team that is always "on the same wave"
-						with clients. Therefore, we are always ready to improve everyone who comes to us!
-					</p>
-					<button class="button-cpa button" type="button">Online-booking</button>
+					<div class="about-content">
+						<p class="about-suptitle suptitle">About</p>
+						<h2 class="about-title title">Best Barbershop in your city</h2>
+						<p class="about-description">
+							<span class="about-subtitle subtitle"
+								>If you want to add more confidence to your image, you should definitely visit us.</span
+							>
+							We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall
+							into the hands of our master, you will never be the same again. We are a team that is always "on the same
+							wave" with clients. Therefore, we are always ready to improve everyone who comes to us!
+						</p>
+						<button class="button-cpa button about-btn" type="button">Online-booking</button>
+					</div>
 				</div>
 			</section>
 
@@ -102,7 +106,7 @@
 				<div class="container">
 					<p class="price-suptitle suptitle">Spend your time with the best masters</p>
 					<h2 class="price-title title">Services and prices</h2>
-					<div class="price-1-column">
+					<div class="price-content">
 						<ul class="price-list list">
 							<li class="price-item price-description">
 								<p class="price-service">Men’s haircut</p>
@@ -121,8 +125,6 @@
 								<p class="price-money">from 200 uah.</p>
 							</li>
 						</ul>
-					</div>
-					<div class="price-2-column">
 						<ul class="price-list list">
 							<li class="price-item price-description">
 								<p class="price-service">Trainee’s haircut</p>
@@ -142,7 +144,7 @@
 							</li>
 						</ul>
 					</div>
-					<button type="button" class="button-cpa button">Online-booking</button>
+					<button type="button" class="button-cpa button price-button">Online-booking</button>
 				</div>
 			</section>
 
