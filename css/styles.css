@@ -40,7 +40,7 @@ img {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
-	border: 1px solid tomato;
+	border: 1px solid black;
 }
 
 .section {
@@ -49,10 +49,6 @@ img {
 }
 
 /* ================================== Classes ========================== */
-
-.container {}
-
-.section {}
 
 .link {
 	text-decoration: none;
@@ -107,12 +103,13 @@ img {
 .menu-nav {
 	display: flex;
 	align-items: center;
+	padding: 32px 0;
 }
 
 .header-content {
 	display: flex;
 	background-color: lightgreen;
-	padding: 32px 0;
+
 	align-items: center;
 }
 
@@ -162,7 +159,6 @@ img {
 	border-radius: 25px;
 	padding: 12px 20px;
 	min-width: 160px;
-
 }
 
 .button {
@@ -190,9 +186,11 @@ img {
 	font-size: 11px;
 	line-height: 15px;
 	letter-spacing: 0.2em;
+	width: 155px;
 }
 
-.social-media-item {}
+.social-media-item {
+}
 
 .social-media-link {
 	color: var(--main-color);
@@ -201,6 +199,16 @@ img {
 .social-media-link:hover,
 .social-media-link:focus {
 	color: var(--accent-color);
+}
+
+.hero-container {
+	display: flex;
+}
+
+.hero-content {
+	padding: 272px 100px 208px;
+	background-color: aliceblue;
+	flex-grow: 1;
 }
 
 .hero-suptitle {
@@ -224,11 +232,29 @@ img {
 
 /* ============================ ABOUT ====================== */
 
-.about {}
+.about {
+}
 
-.about-list {}
+.about-container {
+	display: flex;
+}
 
-.about-item {}
+.about-list {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+	width: 50%;
+}
+
+.about-item {
+	flex-basis: calc((100% - 30xp) / 2);
+}
+
+.about-content {
+	width: 50%;
+	margin-left: 15px;
+	max-width: 470px;
+}
 
 .about-suptitle {
 	margin-bottom: var(--basic-margine);
@@ -251,10 +277,15 @@ img {
 	margin-bottom: var(--basic-margine);
 }
 
+.about-btn {
+	color: var(--main-color);
+}
+
 /* ============================ PRICE ====================== */
 
 .price {
 	padding: 120px 0;
+	background-color: aquamarine;
 }
 
 .price-suptitle {
@@ -267,17 +298,23 @@ img {
 	margin-bottom: 44px;
 }
 
-.price-1-column {}
-
-.price-1-column {}
+.price-content {
+	display: flex;
+	column-gap: 30px;
+	margin-bottom: 44px;
+}
 
 .price-list {
 	padding: 30px 20px;
 	border: 1px solid green;
 	background-color: #555555;
+	flex-grow: 1;
 }
 
-.price-item {}
+.price-item {
+	display: flex;
+	justify-content: space-between;
+}
 
 .price-item:not(:last-child) {
 	margin-bottom: var(--basic-margine);
@@ -287,16 +324,26 @@ img {
 	color: var(--white);
 }
 
-.price-service {}
+.price-service {
+}
 
-.price-money {}
+.price-money {
+}
+
+.price-button {
+	display: block;
+	margin: 0 auto;
+}
 
 /* ============================ WHY US ====================== */
-.why-us {}
+.why-us {
+}
 
-.why-us-list {}
+.why-us-list {
+}
 
-.why-us-item {}
+.why-us-item {
+}
 
 .why-us-number {
 	font-weight: 700;
@@ -313,9 +360,11 @@ img {
 	text-align: center;
 }
 
-.why-us-suptitle {}
+.why-us-suptitle {
+}
 
-.why-us-title {}
+.why-us-title {
+}
 
 .why-us-subtitle {
 	color: var(--secondary-color);
@@ -323,13 +372,17 @@ img {
 
 /* ============================ BARBERS ====================== */
 
-.barbers {}
+.barbers {
+}
 
-.barbers-suptitle {}
+.barbers-suptitle {
+}
 
-.barbers-title {}
+.barbers-title {
+}
 
-.barbers-list {}
+.barbers-list {
+}
 
 .barbers-item {
 	font-weight: 400;
@@ -349,11 +402,14 @@ img {
 
 /* ============================ GALLERY ====================== */
 
-.gallery {}
+.gallery {
+}
 
-.gallery-suptitle {}
+.gallery-suptitle {
+}
 
-.gallery-list {}
+.gallery-list {
+}
 
 /* ============================ ONLINE-FORM ====================== */
 .booking-title {
@@ -374,9 +430,11 @@ img {
 	letter-spacing: 0.02em;
 }
 
-.contacts-list {}
+.contacts-list {
+}
 
-.contacts-item {}
+.contacts-item {
+}
 
 .contacts-link {
 	color: var(--dark-mode-main-color);
@@ -392,7 +450,8 @@ img {
 
 /* ============================ FOOTER ====================== */
 
-.footer {}
+.footer {
+}
 
 .footer-copyright {
 	font-weight: 600;
