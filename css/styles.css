@@ -69,6 +69,17 @@ img {
 	font-size: 11px;
 	line-height: 1.36;
 	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+
+.suptitle::before {
+	content: '';
+	width: 60px;
+	height: 1px;
+	background-color: currentColor;
+	display: block;
+	margin-right: 20px;
 }
 
 .title {
@@ -132,8 +143,7 @@ img {
 	color: var(--accent-color);
 }
 
-.menu-item {
-}
+.menu-item {}
 
 .menu-email {
 	font-weight: 600;
@@ -171,19 +181,17 @@ img {
 
 /* ============================ HERO ====================== */
 
-.hero {
-}
+.hero {}
 
 .social-media-list {
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 15px;
 	letter-spacing: 0.2em;
-	width: 155px;
+	width: 100px;
 }
 
-.social-media-item {
-}
+.social-media-item {}
 
 .social-media-link {
 	color: var(--main-color);
@@ -227,8 +235,7 @@ img {
 
 /* ============================ ABOUT ====================== */
 
-.about {
-}
+.about {}
 
 .about-container {
 	display: flex;
@@ -280,7 +287,12 @@ img {
 
 .price {
 	padding: 120px 0;
-	background-color: aquamarine;
+	background-image: url(../images/prices-3/prices.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #111319;
+
 }
 
 .price-suptitle {
@@ -301,29 +313,41 @@ img {
 
 .price-list {
 	padding: 30px 20px;
-	border: 1px solid green;
-	background-color: #555555;
+	background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 	flex-grow: 1;
+	width: calc((100% - 30px) / 2);
+
 }
 
 .price-item {
 	display: flex;
 	justify-content: space-between;
+	gap: 12px;
+	align-items: baseline;
 }
 
 .price-item:not(:last-child) {
 	margin-bottom: var(--basic-margin);
 }
 
+.price-item::before {
+	content: "";
+	flex-grow: 1;
+	height: 1px;
+	background-color: currentColor;
+	display: inline-block;
+
+}
+
 .price-description {
-	color: var(--white);
+	color: var(--dark-mode-main-color);
 }
 
 .price-service {
+	order: -1;
 }
 
-.price-money {
-}
+.price-money {}
 
 .price-button {
 	display: block;
@@ -332,30 +356,59 @@ img {
 
 /* ============================ WHY US ====================== */
 .why-us {
+	padding: 120px 0;
 }
 
 .why-us-container {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
-.why-us-data {
-}
 
 .why-us-list {
 	display: flex;
+	max-width: 48%;
+	flex-wrap: wrap;
+	column-gap: 30px;
 }
 
 .why-us-item {
+	width: 170px;
+	height: 132px;
+	padding: 20px 24px;
+	background-color: #F7F7F7;
 }
 
-.why-us-number {
+.why-us-item:nth-child(even) {
+	margin-top: 30px;
+
+}
+
+.why-us-item:nth-child(odd) {
+	margin-left: 70px;
+}
+
+
+.why-us-item>span {
 	font-weight: 700;
 	font-size: 42px;
 	line-height: 1.36;
 	text-align: center;
 	letter-spacing: 0.05em;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
 }
+
+.why-us-item>span::after {
+	content: "+";
+	font-weight: 600;
+	font-size: 16px;
+	line-height: calc(22 / 16);
+	color: var(--accent-color);
+}
+
+
 
 .why-us-description {
 	font-weight: 600;
@@ -365,7 +418,8 @@ img {
 }
 
 .why-us-content {
-	margin: 0 130px;
+	max-width: 52%;
+	/* margin-left: 130px; */
 }
 
 .why-us-suptitle {
@@ -380,7 +434,7 @@ img {
 .why-us-subtitle {
 	color: var(--secondary-color);
 	max-width: 500px;
-	margin-bottom: 230px;
+
 }
 
 /* ============================ BARBERS ====================== */
@@ -390,8 +444,7 @@ img {
 	background-color: #f7f7f7;
 }
 
-.barbers-container {
-}
+.barbers-container {}
 
 .barbers-suptitle {
 	margin-bottom: var(--basic-margin);
@@ -412,8 +465,7 @@ img {
 	flex-basis: calc((100% - 60px) / 3);
 }
 
-.barber-list-pic {
-}
+.barber-list-pic {}
 
 .barbers-list-conainer {
 	padding: 30px 82px 0;
@@ -510,11 +562,23 @@ img {
 	background-color: #191c26;
 }
 
+.online-form-container {
+	max-width: 50%;
+}
+
 .booking-title {
 	color: var(--white);
 }
 
 /* ============================ CONTACTS ====================== */
+
+.contacts-container {
+	background-image: url(../images/prices-3/contacts-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 785px;
+}
 
 .contacts-title {
 	color: var(--white);
@@ -581,5 +645,4 @@ img {
 	color: var(--dark-mode-main-color);
 }
 
-.footer-social {
-}
+.footer-social {}
