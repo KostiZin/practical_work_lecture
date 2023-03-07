@@ -197,8 +197,7 @@ img {
 	color: var(--main-color);
 }
 
-.social-media-link:hover,
-.social-media-link:focus {
+.social-media-link:is(:hover, :focus) {
 	color: var(--accent-color);
 }
 
@@ -554,16 +553,20 @@ img {
 .contacts-and-form-container {
 	display: flex;
 	justify-content: space-between;
+
 }
 
 .contacts-and-form {
-	padding-top: 130px;
-	padding-bottom: 120px;
+	padding: 130px 0 120px;
 	background-color: #191c26;
+	background-image: url(../images/prices-3/contacts-bg.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 49% 100%;
 }
 
 .online-form-container {
-	max-width: 50%;
+	width: 51%;
 }
 
 .booking-title {
@@ -573,11 +576,8 @@ img {
 /* ============================ CONTACTS ====================== */
 
 .contacts-container {
-	background-image: url(../images/prices-3/contacts-bg.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	max-width: 785px;
+	width: 49%;
+	padding-left: 100px;
 }
 
 .contacts-title {
@@ -610,7 +610,7 @@ img {
 }
 
 .phone,
-.emial {
+.email {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.67;
@@ -630,11 +630,13 @@ img {
 
 .footer {
 	padding: 56px 0;
+	background-color: #f7f7f7;
 }
 
 .footer-container {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .footer-copyright {
@@ -646,3 +648,22 @@ img {
 }
 
 .footer-social {}
+
+.social-media-list-footer {
+	display: flex;
+	gap: 40px;
+	align-items: center;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: 0.2em;
+}
+
+
+.social-media-list-footer::before {
+	content: '';
+	width: 60px;
+	height: 1px;
+	background-color: currentColor;
+
+}
